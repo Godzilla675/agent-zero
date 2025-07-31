@@ -1043,7 +1043,7 @@ def get_default_settings() -> Settings:
         stt_waiting_timeout=2000,
         tts_kokoro=True,
         mcp_servers='{\n    "mcpServers": {}\n}',
-        mcp_client_init_timeout=10,
+        mcp_client_init_timeout=15,
         mcp_client_tool_timeout=120,
         mcp_server_enabled=False,
         mcp_server_token=create_auth_token(),

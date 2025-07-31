@@ -1037,7 +1037,7 @@ class MCPClientRemote(MCPClientBase):
         set = settings.get_settings()
 
         # Use lower timeouts for faster failure detection
-        init_timeout = min(server.init_timeout or set["mcp_client_init_timeout"], 5)
+        init_timeout = min(server.init_timeout or set["mcp_client_init_timeout"], 15)
         tool_timeout = min(server.tool_timeout or set["mcp_client_tool_timeout"], 10)
 
         # Check if this is a streaming HTTP type
